@@ -1,0 +1,24 @@
+{
+  "name": "matrix-cyberpunk-theme",
+  "version": "1.0.0",
+  "description": "Matrix and Cyberpunk theme toggle system with animated backgrounds",
+  "main": "index.ts",
+  "types": "index.ts",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "zustand": "^4.4.0",
+    "framer-motion": "^10.0.0",
+    "lucide-react": "^0.300.0"
+  },
+  "keywords": [
+    "react",
+    "theme",
+    "matrix",
+    "cyberpunk",
+    "animation",
+    "dark-mode"
+  ],
+  "author": "",
+  "license": "MIT"
+}

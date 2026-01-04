@@ -1,0 +1,134 @@
+/* Theme Utility Classes */
+
+/* Glass morphism effects for both themes */
+.glass-matrix {
+  @apply bg-black/60 backdrop-blur-md border border-green-400/30;
+}
+
+.glass-cyberpunk {
+  @apply bg-purple-900/60 backdrop-blur-md border border-pink-400/30;
+}
+
+/* Text colors */
+.text-matrix {
+  @apply text-green-400;
+}
+
+.text-cyberpunk {
+  @apply text-pink-400;
+}
+
+/* Glow effects */
+.glow-matrix {
+  @apply shadow-lg shadow-green-400/50;
+}
+
+.glow-cyberpunk {
+  @apply shadow-lg shadow-pink-400/50;
+}
+
+/* Button styles */
+.btn-matrix {
+  @apply bg-green-400 text-black hover:bg-green-300 transition-all shadow-lg shadow-green-400/50 font-semibold px-6 py-3 rounded-lg;
+}
+
+.btn-cyberpunk {
+  @apply bg-gradient-to-r from-pink-500 to-purple-500 text-white hover:from-pink-400 hover:to-purple-400 transition-all shadow-lg shadow-pink-400/50 font-semibold px-6 py-3 rounded-lg;
+}
+
+/* Card styles */
+.card-matrix {
+  @apply bg-black/70 border border-green-400/30 rounded-lg p-6 backdrop-blur-sm hover:border-green-400/50 transition-all;
+}
+
+.card-cyberpunk {
+  @apply bg-purple-900/70 border border-pink-400/30 rounded-lg p-6 backdrop-blur-sm hover:border-pink-400/50 transition-all;
+}
+
+/* Input styles */
+.input-matrix {
+  @apply bg-black/60 border border-green-400/30 text-green-100 placeholder-green-400/50 focus:border-green-400 focus:ring-2 focus:ring-green-400/20 rounded-lg px-4 py-2;
+}
+
+.input-cyberpunk {
+  @apply bg-purple-900/60 border border-pink-400/30 text-pink-100 placeholder-pink-400/50 focus:border-pink-400 focus:ring-2 focus:ring-pink-400/20 rounded-lg px-4 py-2;
+}
+
+/* Gradient text effects */
+.gradient-matrix {
+  @apply bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent;
+}
+
+.gradient-cyberpunk {
+  @apply bg-gradient-to-r from-pink-400 via-purple-400 to-orange-400 bg-clip-text text-transparent;
+}
+
+/* Border gradients */
+.border-gradient-matrix {
+  @apply border-2 border-transparent bg-gradient-to-r from-green-400/20 via-green-500/40 to-green-400/20;
+}
+
+.border-gradient-cyberpunk {
+  @apply border-2 border-transparent bg-gradient-to-r from-pink-400/20 via-purple-500/40 to-orange-400/20;
+}
+
+/* Animations */
+@keyframes pulse-matrix {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.7);
+  }
+}
+
+@keyframes pulse-cyberpunk {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.7);
+  }
+}
+
+.animate-pulse-matrix {
+  animation: pulse-matrix 3s ease-in-out infinite;
+}
+
+.animate-pulse-cyberpunk {
+  animation: pulse-cyberpunk 3s ease-in-out infinite;
+}
+
+/* Hover effects */
+.hover-lift {
+  @apply transition-transform duration-300 hover:scale-105 hover:-translate-y-1;
+}
+
+/* Scrollbar styling */
+.scrollbar-matrix::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-matrix::-webkit-scrollbar-track {
+  @apply bg-black/50;
+}
+
+.scrollbar-matrix::-webkit-scrollbar-thumb {
+  @apply bg-green-400/50 rounded-full hover:bg-green-400/70;
+}
+
+.scrollbar-cyberpunk::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-cyberpunk::-webkit-scrollbar-track {
+  @apply bg-purple-900/50;
+}
+
+.scrollbar-cyberpunk::-webkit-scrollbar-thumb {
+  @apply bg-pink-400/50 rounded-full hover:bg-pink-400/70;
+}
